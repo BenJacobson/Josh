@@ -1,0 +1,74 @@
+<html>
+
+<head>
+	<style>
+		body {
+			padding: 0px;
+			margin: 0px;
+		}
+		#options {
+			position: absolute;
+			top: 10;
+			right: 10;
+			padding: 10;
+			background: rgba(200, 200, 200, 0.5);
+		}
+		h3 {
+			margin: 0;
+		}
+		#counter {
+			position: absolute;
+			top: 10;
+			left: 10;
+			padding: 10;
+			background: rgba(200, 200, 200, 0.5);
+		}
+		#title {
+			position: absolute;
+			top: 10;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+			width: 200;
+			padding: 10;
+			background: rgba(200, 200, 200, 0.5);
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript" src="gl-matrix.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+
+<body onload="init()">
+
+	<canvas id="glCanvas">
+	</canvas>
+
+	<div id="counter">
+		<div id="counterTopLine"></div>
+		<div id="counterBottomLine"></div>
+	</div>
+
+	<div id="title"><h3>
+		Josh's Space Exploration
+	</h3></div>
+
+	<div id="options">
+		<center>
+		<h3>
+			Settings
+		</h3>
+		</center>
+
+		<div><input type="checkbox" id="mouseLook">
+			Use mouse to look
+		</input></div>
+		<div><input type="checkbox" id="timeBased">
+			Use time based movement
+		</input></div>
+	</div>
+
+</body>
+
+</html>
